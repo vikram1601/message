@@ -45,11 +45,11 @@ public class MessageHandler extends AbstractSubscriber<MessagePayload> {
 
     @Override
     protected void handle(MessagePayload payload) {
-        this._sendEmail(payload);
+        this._sendMessage(payload);
     }
 
 
-    private boolean _sendEmail(MessagePayload payload) {
+    private boolean _sendMessage(MessagePayload payload) {
         boolean flag = false;
         try {
             payload = this.messageDataBuilder.buildMessageData(payload);

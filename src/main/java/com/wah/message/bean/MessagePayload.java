@@ -14,7 +14,7 @@ public class MessagePayload extends Payload {
     private Set<String> to = new HashSet<String>();
     private String content;
     private EventType eventType;
-
+    private String smsURL;
     /**
      * @return the to
      */
@@ -55,6 +55,20 @@ public class MessagePayload extends Payload {
      */
     public void setEventType(EventType eventType) {
         this.eventType = eventType;
+    }
+
+    /**
+     * @return the smsURL
+     */
+    public String getSmsURL() {
+        return smsURL;
+    }
+
+    /**
+     * @param smsURL the smsURL to set
+     */
+    public void setSmsURL(String smsURL) {
+        this.smsURL = smsURL;
     }
 
 
